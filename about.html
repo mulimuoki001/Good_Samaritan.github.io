@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Samaritan Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ephesis&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Vina+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a class="logo" href="index.html"><img src="images/logo.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="stakeholders.html">STAKEHOLDERS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Get To Know Us<i class="fa fa-smile-o"></i></h1>
+    </section>
+
+    <!--------------------About Us Section------------------>
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Who are We?</h1>
+                <p>The Good Samaritan Foundation is a transformative initiative dedicated to addressing hunger and
+                    environmental sustainability by establishing a vital link between surplus food from hotels and
+                    restaurants and those in need, including children's homes and charitable organizations. This
+                    innovative project not only tackles the pressing issue of food insecurity by redirecting unused
+                    resources to vulnerable populations but also contributes significantly to environmental conservation
+                    by preventing the decomposition of excess food waste. Through a collaborative effort between the
+                    hospitality industry and charitable organizations, the Good Samaritan Project exemplifies a
+                    community-driven approach, emphasizing the importance of shared responsibility in combating social
+                    challenges and promoting sustainable practices. This endeavor stands as a beacon of compassion,
+                    efficiently channeling surplus resources to nourish the underserved while actively participating in
+                    the global effort to reduce food waste and its environmental repercussions. </p>
+                <a href="https://www.good-samaritan.org.uk/">
+                    <button class="hero-btn hbt-btn">EXPLORE NOW</button>
+                </a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg">
+            </div>
+        </div>
+        <!--------------------Join Us Section------------------>
+
+        <section class="join-us">
+            <h1>Join Us</h1>
+            <p>As a non-profit organization, we are committed to fighting hunger and protecting the environment
+                simultaneously. </p>
+            <a href="contact.html#contact">
+                <button class="hero-btn">JOIN US</button>
+            </a>
+        </section>
+
+        <!--------------------Footer Section------------------>
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>As a non-profit organization, we are committed to fighting hunger and protecting the environment
+                simultaneously. </p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by Good Samaritan Foundation</p>
+        </section>
+
+        <!-------------------- javascript for toggle menu ---------------->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0";
+
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+</body>
+
+</html>
