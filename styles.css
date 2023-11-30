@@ -630,6 +630,9 @@ h3{
   transition: transform .5s;
   
 }
+.logo img{
+    border-radius: 30px;
+}
 
 .navigation .btnLogin-popup {
   width: 130px;
