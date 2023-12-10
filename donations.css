@@ -126,7 +126,8 @@ html {
     align-items: center;
     max-width: 1000px ;    
     margin: 0 auto;
-    padding-top: 10%;
+    padding-top: 5%;
+    
 }
 .information h3 {
     font-size: 18px;
