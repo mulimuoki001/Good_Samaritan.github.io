@@ -22,10 +22,12 @@ function sendEmail() {
         message => {
             if (message == "OK") {
                 Swal.fire({
-                    title: "Good job!",
-                    text: "You clicked the button!",
+                    title: "Thank You!",
+                    text: "Sent Successfully",
                     icon: "success"
                 });
+
+                window.location.href = "contact.html";
             }
         }
     );
