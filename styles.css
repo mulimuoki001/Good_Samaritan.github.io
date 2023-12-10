@@ -13,10 +13,13 @@
     background-position: center;
     position: relative;
 }
-.logo {
-   width: 20px;
-    border-radius: 5px;
-}
+
+.header .logo img{
+    margin: 30px;
+    width: 150px;
+     border-radius: 30px;
+ }
+
 nav {
     display: flex;
     padding: 2% 6%;
@@ -366,6 +369,26 @@ h3{
     font-family: 'Ephesis', cursive;
     font-size: 50px;
 }
+.sub-header .logo img{
+    margin: 30px;
+    width: 150px;
+     border-radius: 30px;
+ }
+ .sub-header1 .logo img{
+    margin: 30px;
+    width: 150px;
+     border-radius: 30px;
+ }
+ .sub-header2 .logo img{
+    margin: 30px;
+    width: 150px;
+     border-radius: 30px;
+ }
+ .sub-header3 .logo img{
+    margin: 30px;
+    width: 150px;
+     border-radius: 30px;
+ }
 
 .about-us {
     width: 80%;
