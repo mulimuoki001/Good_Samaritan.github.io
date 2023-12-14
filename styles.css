@@ -172,18 +172,28 @@ p {
 
 .row {
   margin-top: 5%;
+  display: block;
+  flex-direction: column;
+}
+.row1 {
+  margin-top: 5%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
-
+.block-indentation {
+  display: inline-block;
+  margin-left: 20px; /* Adjust the indentation value as needed */
+}
 .stakeholder-col {
   flex-basis: 31%;
-  background: #d8cbcb;
+  background: #f3d4d4;
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px 12px;
   box-sizing: border-box;
   transition: 0.5s;
+  align-items: center;
 }
 
 h3 {
@@ -376,6 +386,27 @@ h3 {
   background-size: cover;
   text-align: center;
   color: #fff;
+}
+
+.values,
+.volunteer-details {
+  margin-bottom: 20px;
+}
+.values > h1,
+.volunteer-details > h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.values p,
+.volunteer-details p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.values ul,
+.volunteer-details ul {
+  list-style: disc;
+  margin-left: 50px;
 }
 
 .sub-header h1 {
