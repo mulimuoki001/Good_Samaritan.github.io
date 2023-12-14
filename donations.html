@@ -56,7 +56,7 @@
 
             <h1>-</h1>
             <a href="#explore"><button>EXPLORE</button></a>
-            <a href="#container" target="blank"><button>DONATE</button></a>
+            <a href="dform.html" target="blank"><button>DONATE</button></a>
         </div>
 
     </div>
@@ -64,11 +64,8 @@
     <div class="explore" id="explore"></div>
 
     <div class="about">
-        <div class="imgcontanner slideshow">
-            <div class="slideshow">
-                <img src="images/child.jpg" alt="Photo 1">
-                <img src="images/goldenheart.jpg" alt="Photo 2">
-            </div>
+        <div class="imgcontanner ">
+            <div class="aboutimg"></div>
         </div>
         <div class="aboutcontent">
             <h5>_</h5>
@@ -84,7 +81,7 @@
                 Samaritan Project is a powerful way for your hotel or restaurant to demonstrate corporate social
                 responsibility, foster positive community relationships, and actively contribute to a more sustainable
                 and compassionate future.</p>
-            <a href="#container" target="black">DONATE</a>
+            <a href="dform.html" target="black">DONATE</a>
             <br>
             <br>
             <h5>_</h5>
@@ -92,7 +89,7 @@
         </div>
     </div>
 
-    <!-- ----------------------------------  Service -------------------------------------- -->
+    <!-- ---------------------------------- Our Road Map -------------------------------------- -->
     <div class="service" id="service">
 
 
@@ -187,49 +184,6 @@
 
     </div>
 
-    <!-- ----------------------------------Donation Form ---------------------------------- -->
-    <div class="container" id="container">
-        <div class="row col-md-6 col-md-offset-3">
-            <div class="panel panel-primary">
-                <div class="panel-heading text-center">
-                    <h1>Donation Form</h1>
-                </div>
-                <div class="panel-body">
-                    <form action="donation.php" method="post">
-                        <div class="form-group">
-                            <label for="firstName">Hotel/Restaurant</label>
-                            <input type="text" class="form-control" id="firstName" name="firstName" />
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="text" class="form-control" id="email" name="email" />
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" name="password" />
-                        </div>
-                        <div class="form-group">
-                            <label for="number">Phone Number</label>
-                            <input type="text" class="form-control" id="number" name="number" />
-                        </div>
-                        <div class="form-group">
-                            <label for="text">Quantity of Food</label>
-
-                            <textarea rows="8" name="message" id="message" class="form-control" placeholder="Message"
-                                required></textarea>
-                        </div>
-                        <input type="submit" class="btn btn-primary" />
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-
-
-    </div>
 
     <!--------------------Join Us Section------------------>
 
@@ -285,24 +239,7 @@
             }
         }
 
-        const images = document.querySelectorAll('.slideshow img');
-        let currentIndex = 0;
-
-        function switchImage() {
-            // Hide the current image
-            images[currentIndex].style.opacity = 0;
-
-            // Increment the index
-            currentIndex = (currentIndex + 1) % images.length;
-
-            // Show the next image
-            images[currentIndex].style.opacity = 1;
-        }
-
-        // Call the switchImage function every 3 seconds
-        setInterval(switchImage, 3000);
     </script>
-
 </body>
 
 </html>
